@@ -9,7 +9,7 @@ from razan.CMD.aomari import *
 from ..Config import Config
 from ..core import check_owner
 
-ROE = """** اهلا بك عزيزي المستخدم في قائمة اوامر جمثون
+ROE = """** اهلا بك عزيزي المستخدم في قائمة اوامر الزعيم
 من هنا يمكنك تصفح جميع الاوامر المتاحة **"""
 
 ROZADM = "من هنا يمكنك ايجاد جميع"
@@ -25,7 +25,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         await jmisgood.get_me()
         if query.startswith("اوامري") and event.query.user_id == jmisgood.uid:
             buttons = [
-                [Button.inline("معلومات جمثون", data="AOMRDB")],
+                [Button.inline("معلومات الزعيم", data="AOMRDB")],
                 [
                     Button.inline("البوت", data="BOTCMD4"),
                     Button.inline("الكروب", data="admincmd_s"),
@@ -66,7 +66,7 @@ async def repo(event):
 @check_owner
 async def _(event):
     butze = [
-        [Button.inline("معلومات جمثون", data="AOMRDB")],
+        [Button.inline("معلومات الزعيم", data="AOMRDB")],
         [
             Button.inline("البوت", data="BOTCMD4"),
             Button.inline("الكروب", data="admincmd_s"),
@@ -207,11 +207,11 @@ async def varssett(event):
 - سورس جمثون يمتلك اكثر من 100 أمر 
 - جمثون هو افضل سورس عربي يتميز بالحماية
 
-قناة الكلايش:  @JJOTT
-قناة الملاحظات: @RRRDF
-قناة السورس: @JMTHON
-قناة المساعدة: @JMTHON_HELP
-مجموعة المساعدة: @JMTHON_SUPPORT""",
+معرف المطور:  @rr_r_l
+معرف المطور: @rr_r_l
+معرف المطور: @rr_r_l
+معرف المطور: @rr_r_l
+للمساعده المطور: @rr_r_l""",
         buttons=[
             [Button.inline("رجوع", data="namevar")],
         ],
